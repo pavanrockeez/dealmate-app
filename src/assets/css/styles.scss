@@ -1,0 +1,90 @@
+.home_page {
+    height: 100%;
+    overflow-y: scroll;
+  }
+.bg_yellow{
+    border: 5px solid  #FFC127;
+    width: 100%;
+}
+.header_div{
+    background: #B5442B;
+    border-radius: 0px 0px 80px 80px;
+    width: 100%;
+    position: relative;
+}
+.flex_class {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.container{
+    padding: 20px 20px;
+}
+.play_store{
+    a{
+        font-family: 'Aeonik';
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-right: 15px;
+        text-decoration: none;
+    }
+}
+.great_deals{
+    h5{
+        font-family: 'Aeonik';
+        font-weight: 700;
+        font-size: 56px;
+        color: #FFFFFF;
+    }    
+}
+.header_text{
+    margin-bottom: 50px;
+}
+.nav-tabs .nav-link {
+    border-radius: 0px;
+    color: #FFFFFF;
+    font-family: 'Aeonik';
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    padding: 0px 20px 10px;
+    margin-right: 50px;
+}
+.nav-tabs .nav-link.active,
+  .nav-tabs .nav-link:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 5px solid #FFC127;;
+}
+.nav-link:focus,
+  .nav-link:hover {
+    border: none;
+}
+.top_brands{
+    background: #FFC127;
+    width: 100%;
+    margin-top: 20px;
+    padding: 30px 20px;
+}
+.topbrands_text{
+    p{   
+        font-family: 'Aeonik';
+        font-weight: 700;
+        font-size: 16px;
+        color: #000000;
+    }
+    h5{
+        font-family: 'Aeonik';
+        font-weight: 700;
+        font-size: 56px;
+        color: #121212;
+    }
+    .some_text{
+        font-family: 'Aeonik';
+        font-weight: 400;
+        font-size: 25px;
+        color: #424242;
+    }
+}
