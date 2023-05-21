@@ -45,12 +45,14 @@
     }
 }
 
-.header_text {
+.header_text,
+.top_brands_kids {
     margin-bottom: 50px;
 }
 
 .owl-carosal,
-.store_links {
+.store_links,
+.more_deals {
     margin-bottom: 20px;
 }
 
@@ -113,6 +115,7 @@
         font-size: 25px;
         color: #424242;
     }
+
     .percentage {
         position: absolute;
         top: 50%;
@@ -123,5 +126,151 @@
         font-weight: 700;
         font-size: 31px;
         color: #FFC127;
+    }
+}
+
+.owl-carousel {
+    display: block;
+}
+
+.ratings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 999;
+
+    h5 {
+        font-family: 'Anek Devanagari Expanded';
+        font-weight: 600;
+        font-size: 21px;
+        color: #FFC127;
+    }
+
+    p {
+        font-family: 'Aeonik';
+        font-weight: 400;
+        font-size: 12px;
+        color: #FFC127;
+    }
+}
+
+.container {
+    .owl-carousel .owl-dots {
+        left: 10px;
+        position: absolute;
+        left: 0;
+        right: auto;
+        z-index: 999;
+        padding: 0px 10px;
+        bottom: 5px;
+    }
+
+}
+
+.container {
+    .card_body {
+        background: #943622;
+        border-radius: 0px 0px 20px 20px;
+
+        h5 {
+            font-family: 'Anek Devanagari Expanded';
+            font-weight: 700;
+            font-size: 50px;
+            color: #FFC127;
+            margin: 0px;
+        }
+
+        p {
+            font-family: 'Anek Devanagari Expanded';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: #FFFFFF
+        }
+    }
+
+    .card {
+        border: none;
+        border-radius: 20px;
+    }
+}
+
+.hr_line {
+    border: 1px solid #7D2C1B;
+    width: 100%;
+}
+
+.shop_now {
+    padding: 10px 10px;
+
+    button {
+        background: #FFC127;
+        border-radius: 20px;
+        border: none;
+        font-family: 'Aeonik';
+        font-weight: 500;
+        font-size: 18px;
+        color: #943622;
+        padding: 0px 20px;
+    }
+}
+
+.deals_btn {
+    background: #FFC127;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Aeonik';
+    font-weight: 500;
+    font-size: 18px;
+    color: #943622;
+    padding: 10px 20px;
+}
+
+.top_brands_kids {
+    position: relative;
+    padding-bottom: 273px;
+}
+
+.cards_position {
+    position: absolute;
+}
+
+.mobile_bg {
+    background: #B5442B;
+}
+
+.mobile_tags {
+    background: #B5442B;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 50px;
+}
+
+.mobiles {
+    bottom: 0px;
+}
+.mobile_vew{
+    margin-bottom: 50px;
+}
+.logo_icons{
+    padding: 25px 25px;
+}
+.great_deals_text {
+    padding: 20px 20px;
+    h5 {
+        word-wrap: break-word;
+        font-family: 'Aeonik';
+        font-weight: 700;
+        font-size: 28px;
+        color: #121212;
+    }
+
+    p {
+        word-wrap: break-word;
+        font-family: 'Aeonik';
+        font-weight: 500;
+        font-size: 16px;
+        color: #424242;
     }
 }

@@ -7,6 +7,9 @@ import Products from './products';
 import TopBrands from './topBrands';
 import apple_store from '../assets/img/apple_store.svg';
 import Offers from './offers';
+import ForKids from './forKids';
+import mobile_icon from '../assets/img/mobile_3.svg';
+import offers_icon from '../assets/img/offers_icon.svg';
 const Home = () => {
   const [navTabs, setNavTabs] = useState('men');
   const tabs = [
@@ -102,6 +105,83 @@ const Home = () => {
             <img src={apple_store} alt="aple_store" />
           </div>
         </div>
+      </div>
+      <div className='row top_brands_kids'>
+        <div className="top_brands text-center top_brands_kids">
+          <ForKids />
+        </div>
+      </div>
+      <div className='row mobile_vew'>
+        <div className="col-12 text-center ">
+          <div className="d-flex justify-content-center align-items-center mobile_display">
+            <img src={mobile_icon} alt="mobiles" className="smaller-icon" />
+            <img src={mobile_icon} alt="mobiles" className='my-5' height={'400px'} />
+            <img src={mobile_icon} alt="mobiles" className="smaller-icon" />
+          </div>
+        </div>
+        <div className="col-12 text-center mobile_tags">
+          <div className="text-center mb-3 mt-3">
+            <h5>Lorem ipsum is placeholder text commonly used in the graphic, print,</h5>
+          </div>
+          <div className="d-inline-block">
+            <img src={play_store} alt="google_play" style={{ marginRight: '20px' }} />
+            <img src={apple_store} alt="apple_store" />
+          </div>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='col-lg-2'></div>
+        <div className='col-g-2'>
+          <div className='great_deals_text'>
+            <h5>Great deals everyday</h5>
+            <p className='break-word'>Lorem ipsum is placeholder  text</p>
+          </div>
+          <div className='great_deals_text'>
+            <h5>Great deals everyday</h5>
+            <p>Lorem ipsum is placeholder</p>
+          </div>
+          <div className='great_deals_text'>
+            <h5>Great deals everyday</h5>
+            <p>Lorem ipsum is placeholder</p>
+          </div>
+        </div>
+        <div className='col-lg-1'>
+          <div className='logo_icons'>
+            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
+          </div>
+          <div className='logo_icons'>
+            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
+          </div>
+          <div className='logo_icons'>
+            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
+          </div>
+        </div>
+        <div className='col-lg-1'>
+          <div className='logo_icons'>
+            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
+          </div>
+          <div className='logo_icons'>
+            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
+          </div>
+          <div className='logo_icons'>
+            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
+          </div>
+        </div>
+        <div className='col-g-2'>
+          <div className='great_deals_text'>
+            <h5>Great deals everyday</h5>
+            <p>Lorem ipsum is placeholder</p>
+          </div>
+          <div className='great_deals_text'>
+            <h5>Great deals everyday</h5>
+            <p>Lorem ipsum is placeholder</p>
+          </div>
+          <div className='great_deals_text'>
+            <h5>Great deals everyday</h5>
+            <p>Lorem ipsum is placeholder</p>
+          </div>
+        </div>
+        <div className='col-g-2'></div>
       </div>
     </div>
   )
