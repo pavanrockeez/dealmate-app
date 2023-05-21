@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import '../assets/css/styles.scss';
 import dealmate_icon from '../assets/img/dealmate_icon.svg';
 import google_paly from '../assets/img/google_paly.svg';
+import play_store from '../assets/img/play_store.svg';
 import Products from './products';
 import TopBrands from './topBrands';
+import apple_store from '../assets/img/apple_store.svg';
+import Offers from './offers';
 const Home = () => {
   const [navTabs, setNavTabs] = useState('men');
   const tabs = [
@@ -85,6 +88,19 @@ const Home = () => {
       <div className='row'>
         <div className="top_brands text-center">
           <TopBrands />
+          <div className='flex_class store_links justify-content-center'>
+            <img src={play_store} alt="google_paly" style={{ marginRight: '20px' }} />
+            <img src={apple_store} alt="aple_store" />
+          </div>
+        </div>
+      </div>
+      <div className='row'>
+        <div className="top_offers text-center">
+          <Offers />
+          <div className='flex_class store_links justify-content-center'>
+            <img src={play_store} alt="google_paly" style={{ marginRight: '20px' }} />
+            <img src={apple_store} alt="aple_store" />
+          </div>
         </div>
       </div>
     </div>
