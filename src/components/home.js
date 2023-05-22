@@ -10,6 +10,8 @@ import Offers from './offers';
 import ForKids from './forKids';
 import mobile_icon from '../assets/img/mobile_3.svg';
 import offers_icon from '../assets/img/offers_icon.svg';
+import Footer from './footer';
+import './footer.scss';
 const Home = () => {
   const [navTabs, setNavTabs] = useState('men');
   const tabs = [
@@ -129,7 +131,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='row'>
+      <div className='row deals_div'>
         <div className='col-lg-2'></div>
         <div className='col-g-2'>
           <div className='great_deals_text'>
@@ -182,6 +184,11 @@ const Home = () => {
           </div>
         </div>
         <div className='col-g-2'></div>
+      </div>
+      <div className='row'>
+        <div className='col-lg-12 footer_div'>
+          <Footer />
+        </div>
       </div>
     </div>
   )
