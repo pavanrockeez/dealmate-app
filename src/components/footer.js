@@ -7,7 +7,15 @@ import twitter_icon from '../assets/img/twitter_icon.svg';
 import youtube_icon from '../assets/img/youtube_icon.svg';
 import instagram_icon from '../assets/img/instagram_icon.svg';
 import truly_icon from '../assets/img/truly_icon.svg';
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
+    const navigate = useNavigate();
+    const navigateToTerms =()=>{
+        navigate('/terms');
+    }
+    const navigateToPolicy =()=>{
+        navigate('/policy')
+    }
     return (
         <div>
             <div className='row follow_page'>
@@ -53,12 +61,12 @@ const Footer = () => {
                 <div className='col-lg-4 from_truly'>
                     <div className='d-flex home_about terms_and_condition'>
                         <div>
-                            <p><a href='/home'>Home</a></p>
+                            <p><a href='/'>Home</a></p>
                             <p><a href='/about'>About Us</a></p>
                         </div>
                         <div className='terms_condition'>
-                            <p><a href='/terms'>Terms & Conditions</a></p>
-                            <p><a href='/aprivacy'>Privacy Policy</a></p>
+                            <p><a href='/terms' onClick={()=> navigateToTerms()}>Terms & Conditions</a></p>
+                            <p><a href='/policy' onClick={() => navigateToPolicy()}>Privacy Policy</a></p>
                         </div>
                     </div>
 

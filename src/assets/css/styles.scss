@@ -2,12 +2,26 @@
     height: 100%;
     overflow-y: scroll;
 }
-
 .bg_yellow {
     border: 5px solid #FFC127;
     width: 100%;
 }
-
+.header_text_div{
+    h5{
+        font-family: 'Aeonik';
+        font-weight: 700;
+        font-size: 30px;
+        color: #FFFFFF;
+        margin-bottom: 0px;
+    }
+    p{
+        font-family: 'Aeonik';
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    margin-bottom: 20px;
+}
 .header_div {
     background: #B5442B;
     border-radius: 0px 0px 80px 80px;
@@ -66,7 +80,6 @@
     padding: 0px 20px 10px;
     margin-right: 50px;
 }
-
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:hover {
     background-color: transparent;

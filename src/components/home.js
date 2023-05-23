@@ -8,12 +8,15 @@ import TopBrands from './topBrands';
 import apple_store from '../assets/img/apple_store.svg';
 import Offers from './offers';
 import ForKids from './forKids';
-import mobile_icon from '../assets/img/mobile_3.svg';
-import offers_icon from '../assets/img/offers_icon.svg';
 import Footer from './footer';
+import offers_icon from '../assets/img/offers_icon.svg';
 import './footer.scss';
+import { useNavigate } from 'react-router-dom';
+import Mobiles from './mobiles';
+import GreatDeals from './greatDeals';
 const Home = () => {
   const [navTabs, setNavTabs] = useState('men');
+  const navigate = useNavigate();
   const tabs = [
     {
       id: 1,
@@ -23,7 +26,7 @@ const Home = () => {
     {
       id: 2,
       name: 'Women',
-      to: 'woment'
+      to: 'women'
     },
     {
       id: 3,
@@ -33,61 +36,63 @@ const Home = () => {
   ];
   const tabEvent = (tab) => {
     setNavTabs(tab);
+    navigate('/alldeals');
   }
   return (
     <div className='home_page' style={{ overflowY: 'scroll', height: '100vh' }}>
       <div className='header_div'>
         <div className='bg_yellow'></div>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-lg-12 flex_class justify-content-between'>
-              <div className='flex_class'>
-                <img src={dealmate_icon} alt='dealmate' />
-              </div>
-              <div className='flex_class play_store'>
-                <a href='/about'>About us</a>
-                <img src={google_paly} alt="play_store" />
-              </div>
+        <div className='row'>
+          <div className='col-lg-1'></div>
+          <div className='col-lg-10 flex_class justify-content-between headers_div'>
+            <div>
+              <img src={dealmate_icon} alt='dealmate' />
             </div>
-            <div className='col-lg-12 text-center great_deals'>
-              <div className='header_text'>
-                <h5>Great deals</h5>
-                <h5>on your fingertips</h5>
-              </div>
-              <div className='justify-content-center header_text'>
-                <div className="bloc-tab">
-                  <ul
-                    className="nav nav-tabs singup-tabs justify-content-center"
-                    id="myTab"
-                    role="tablist"
-                  >
-                    {tabs.map((link) => {
-                      return (
-                        <li key={link.id} className="nav-item ">
-                          <a
-                            className={
-                              "nav-link" + (
-                                navTabs == link.to ? " active" : "")
-                            }
-                            href={"#" + link.to}
-                            role="tab"
-                            aria-controls="home"
-                            data-bs-toggle="tab"
-                            onClick={() => tabEvent(link.to)}
-                          >
-                            {link.name}
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
-              <div className='col-lg-12 card_dtl'>
-                <Products />
-              </div>
+            <div className='flex_class play_store'>
+              <a href='/about'>About us</a>
+              <img src={google_paly} alt="play_store" />
             </div>
           </div>
+        </div>
+        <div className='row justify-content-center'>
+          <div className='header_text_div'>
+            <h5>Great deals</h5>
+            <h5>on your fingertips</h5>
+            <p>Lorem ipsum is placeholder text commonly used in the graphic,</p>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-lg-2'></div>
+          <div className='col-lg-8 justify-content-center mb-3'>
+            <div className="bloc-tab">
+              <ul
+                className="nav nav-tabs singup-tabs justify-content-center"
+                id="myTab"
+                role="tablist"
+              >
+                {tabs.map((link) => {
+                  return (
+                    <li key={link.id} className="nav-item ">
+                      <a
+                        className={
+                          "nav-link" + (
+                            navTabs == link.to ? " active" : "")
+                        }
+                        href={"#" + link.to}
+                        role="tab"
+                        aria-controls="home"
+                        data-bs-toggle="tab"
+                        onClick={() => tabEvent(link.to)}
+                      >
+                        {link.name}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+          <div className='col-lg-2'></div>
         </div>
       </div>
       <div className='row'>
@@ -114,77 +119,9 @@ const Home = () => {
         </div>
       </div>
       <div className='row mobile_vew'>
-        <div className="col-12 text-center ">
-          <div className="d-flex justify-content-center align-items-center mobile_display">
-            <img src={mobile_icon} alt="mobiles" className="smaller-icon" />
-            <img src={mobile_icon} alt="mobiles" className='my-5' height={'400px'} />
-            <img src={mobile_icon} alt="mobiles" className="smaller-icon" />
-          </div>
-        </div>
-        <div className="col-12 text-center mobile_tags">
-          <div className="text-center mb-3 mt-3">
-            <h5>Lorem ipsum is placeholder text commonly used in the graphic, print,</h5>
-          </div>
-          <div className="d-inline-block">
-            <img src={play_store} alt="google_play" style={{ marginRight: '20px' }} />
-            <img src={apple_store} alt="apple_store" />
-          </div>
-        </div>
+        <Mobiles />
       </div>
-      <div className='row deals_div'>
-        <div className='col-lg-2'></div>
-        <div className='col-g-2'>
-          <div className='great_deals_text'>
-            <h5>Great deals everyday</h5>
-            <p className='break-word'>Lorem ipsum is placeholder  text</p>
-          </div>
-          <div className='great_deals_text'>
-            <h5>Great deals everyday</h5>
-            <p>Lorem ipsum is placeholder</p>
-          </div>
-          <div className='great_deals_text'>
-            <h5>Great deals everyday</h5>
-            <p>Lorem ipsum is placeholder</p>
-          </div>
-        </div>
-        <div className='col-lg-1'>
-          <div className='logo_icons'>
-            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
-          </div>
-          <div className='logo_icons'>
-            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
-          </div>
-          <div className='logo_icons'>
-            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
-          </div>
-        </div>
-        <div className='col-lg-1'>
-          <div className='logo_icons'>
-            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
-          </div>
-          <div className='logo_icons'>
-            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
-          </div>
-          <div className='logo_icons'>
-            <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
-          </div>
-        </div>
-        <div className='col-g-2'>
-          <div className='great_deals_text'>
-            <h5>Great deals everyday</h5>
-            <p>Lorem ipsum is placeholder</p>
-          </div>
-          <div className='great_deals_text'>
-            <h5>Great deals everyday</h5>
-            <p>Lorem ipsum is placeholder</p>
-          </div>
-          <div className='great_deals_text'>
-            <h5>Great deals everyday</h5>
-            <p>Lorem ipsum is placeholder</p>
-          </div>
-        </div>
-        <div className='col-g-2'></div>
-      </div>
+      <GreatDeals />
       <div className='row'>
         <div className='col-lg-12 footer_div'>
           <Footer />

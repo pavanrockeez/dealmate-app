@@ -1,0 +1,85 @@
+.all_deals{
+    position: relative;
+    top: -30px;
+}
+.header_text_div{
+    margin-bottom: 50px;
+}
+.alldeals {
+    .owl-carousel .owl-dots {
+        left: 10px;
+        position: absolute;
+        left: 0;
+        right: auto;
+        z-index: 999;
+        padding: 0px 10px;
+        bottom: 5px;
+    }
+    .card_dtl{
+        margin-bottom: 20px;
+    }
+    .card_body {
+        background: #943622;
+        border-radius: 0px 0px 20px 20px;
+
+        h5 {
+            font-family: 'Anek Devanagari Expanded';
+            font-weight: 700;
+            font-size: 50px;
+            color: #FFC127;
+            margin: 0px;
+        }
+
+        p {
+            font-family: 'Anek Devanagari Expanded';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: #FFFFFF
+        }
+    }
+
+    .card {
+        border: none;
+        border-radius: 20px;
+    }
+
+}
+
+.ratings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 999;
+
+    h5 {
+        font-family: 'Anek Devanagari Expanded';
+        font-weight: 600;
+        font-size: 21px;
+        color: #FFC127;
+    }
+
+    p {
+        font-family: 'Aeonik';
+        font-weight: 400;
+        font-size: 12px;
+        color: #FFC127;
+    }
+}
+.card_b_details{
+    padding: 10px 10px;
+}
+.load_more{
+    margin-bottom: 50px;
+    button{
+        background: #FFC127;
+        border-radius: 20px;
+        padding: 20px 40px;
+        border: none;
+        font-family: 'Aeonik';
+        font-weight: 700;
+        font-size: 16px;
+        color: #000000;
+    }
+}
