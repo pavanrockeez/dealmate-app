@@ -1,14 +1,31 @@
-.terms_and_condtions_text{
+.terms_and_condtions_text {
     padding: 50px 0px;
 }
-.complete_terms{
+
+.complete_terms {
     font-family: 'Aeonik';
     font-weight: 500;
     font-size: 16px;
-    h6{
-        color:#943622;
+
+    h6 {
+        color: #943622;
     }
-    p{
+
+    p {
         color: #424242;
     }
+}
+
+.about_div {
+    padding: 50px 0px;
+    p {
+        font-family: 'Aeonik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #424242;
+    }
+}
+.img_display{
+    margin: 30px 0px;
 }

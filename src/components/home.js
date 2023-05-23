@@ -95,32 +95,10 @@ const Home = () => {
           <div className='col-lg-2'></div>
         </div>
       </div>
-      <div className='row'>
-        <div className="top_brands text-center">
-          <TopBrands />
-          <div className='flex_class store_links justify-content-center'>
-            <img src={play_store} alt="google_paly" style={{ marginRight: '20px' }} />
-            <img src={apple_store} alt="aple_store" />
-          </div>
-        </div>
-      </div>
-      <div className='row'>
-        <div className="top_offers text-center">
-          <Offers />
-          <div className='flex_class store_links justify-content-center'>
-            <img src={play_store} alt="google_paly" style={{ marginRight: '20px' }} />
-            <img src={apple_store} alt="aple_store" />
-          </div>
-        </div>
-      </div>
-      <div className='row top_brands_kids'>
-        <div className="top_brands text-center top_brands_kids">
-          <ForKids />
-        </div>
-      </div>
-      <div className='row mobile_vew'>
-        <Mobiles />
-      </div>
+      <TopBrands />
+      <Offers />
+      <ForKids />
+      <Mobiles />
       <GreatDeals />
       <div className='row'>
         <div className='col-lg-12 footer_div'>

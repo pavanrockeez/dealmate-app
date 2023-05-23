@@ -5,7 +5,7 @@ const GreatDeals = () => {
     return (
         <div className='row deals_div'>
             <div className='col-lg-2'></div>
-            <div className='col-g-4'>
+            <div className='col-g-3'>
                 <div className='great_deals_text'>
                     <h5>Great deals everyday</h5>
                     <p className='break-word'>Lorem ipsum is placeholder  text</p>
@@ -41,7 +41,7 @@ const GreatDeals = () => {
                     <img src={offers_icon} alt="logo_icon" height={'70px'} width={'70px'} />
                 </div>
             </div>
-            <div className='col-lg-4'>
+            <div className='col-lg-3'>
                 <div className='great_deals_text'>
                     <h5>Great deals everyday</h5>
                     <p>Lorem ipsum is placeholder</p>
@@ -55,6 +55,7 @@ const GreatDeals = () => {
                     <p>Lorem ipsum is placeholder</p>
                 </div>
             </div>
+            <div className='col-lg-2'></div>
         </div>
     )
 }

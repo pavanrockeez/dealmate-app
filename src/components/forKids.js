@@ -40,15 +40,26 @@ const ForKids = () => {
     ];
 
     return (
-        <div className="topbrands_text">
-            <div className="col-lg-12">
-                <div>
-                    <p>FONR KIDS</p>
-                    <h5>Top Brands</h5>
-                    <h5>Great deals Everyday</h5>
+        <div className='great_deals_for_kids'>
+            <div className='top_brands_view top_brands products_brand'>
+                <div className='row'>
+                    <div className='col-lg-3'></div>
+                    <div className='col-lg-6 justify-content-center'>
+                        <div className='text-center top_brand_para'>
+                            <p>Explore by Brand</p>
+                            <h5>Top Brands Great deals Everyday</h5>
+                            <p className='some_text'>Lorem ipsum is placeholder
+                                text commonly used in the graphic
+                            </p>
+                        </div>
+                    </div>
+                    <div className='col-lg-3'></div>
                 </div>
-                <div className="container cards_position">
-                    <div className="row justify-content-center more_deals">
+            </div>
+            <div className='row more_deals justify-content-center product_cards'>
+                <div className='col-lg-2'></div>
+                <div className='col-lg-9'>
+                    <div className='row cards_pos'>
                         {brands.map((item, i) => (
                             <div className="col-lg-3 card_dtl" key={i}>
                                 <div className="card">
@@ -81,7 +92,7 @@ const ForKids = () => {
                                                 <h5>{item.percentate} OFF</h5>
                                                 <p className="body_para text-left">MRP ₹{item.mrp} |  Offer ₹{item.offer} </p>
                                             </div>
-                                            
+
                                         </div>
                                         <div className='hr_line'></div>
                                         <div className='d-flex justify-content-between shop_now'>
@@ -92,9 +103,10 @@ const ForKids = () => {
                                 </div>
                             </div>
                         ))}
+                        <div className='col-lg-3'></div>
                     </div>
-                    <button className='deals_btn'>MORE DEALS</button>
                 </div>
+                <button className='deals_btn'>MORE DEALS</button>
             </div>
         </div>
     )

@@ -58,18 +58,43 @@
         color: #FFFFFF;
     }
 }
+.great_deals_for_kids{
+    position: relative;
+    .product_cards{
+        position: relative;
+    }
+    .products_brand{
+        position: absolute;
+    }
+}
+.cards_pos{
+    margin-top: 200px;
+}
 
 .header_text,
 .top_brands_kids {
     margin-bottom: 50px;
 }
-
+.mobile_views{
+    position: relative;
+    .mobiles_drag{
+        position: relative;
+        width: 100%;
+    }
+    .top_brand_para{
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+}
 .owl-carosal,
 .store_links,
-.more_deals,.deals_div {
+.more_deals {
     margin-bottom: 20px;
 }
-
+.deals_div{
+    margin-bottom: 20px;
+    padding: 50px 0px;
+}
 .nav-tabs .nav-link {
     border-radius: 0px;
     color: #FFFFFF;
@@ -93,21 +118,8 @@
 .nav-link:hover {
     border: none;
 }
-
-.top_brands {
-    background: #FFC127;
-    width: 100%;
-    margin-top: 20px;
-    padding: 40px 20px;
-}
-
-.top_offers {
-    width: 100%;
-    margin-top: 20px;
-    padding: 40px 20px;
-}
-
-.topbrands_text {
+.top_brand_images{
+    margin-bottom: 50px;
     p {
         font-family: 'Aeonik';
         font-weight: 700;
@@ -118,17 +130,16 @@
     h5 {
         font-family: 'Aeonik';
         font-weight: 700;
-        font-size: 56px;
+        font-size: 30px;
         color: #121212;
     }
 
     .some_text {
         font-family: 'Aeonik';
         font-weight: 400;
-        font-size: 25px;
+        font-size: 20px;
         color: #424242;
     }
-
     .percentage {
         position: absolute;
         top: 50%;
@@ -140,6 +151,18 @@
         font-size: 31px;
         color: #FFC127;
     }
+}
+.top_brands {
+    background: #FFC127;
+    width: 100%;
+    margin-top: 20px;
+    padding: 40px 20px;
+}
+
+.top_offers {
+    width: 100%;
+    margin-top: 20px;
+    padding: 40px 20px;
 }
 
 .owl-carousel {
@@ -181,7 +204,7 @@
 
 }
 
-.container {
+.cards_pos {
     .card_body {
         background: #943622;
         border-radius: 0px 0px 20px 20px;
@@ -189,7 +212,7 @@
         h5 {
             font-family: 'Anek Devanagari Expanded';
             font-weight: 700;
-            font-size: 50px;
+            font-size: 30px;
             color: #FFC127;
             margin: 0px;
         }
@@ -238,6 +261,7 @@
     font-size: 18px;
     color: #943622;
     padding: 10px 20px;
+    margin-top: 40px;
 }
 
 .top_brands_kids {
@@ -252,14 +276,21 @@
 .mobile_bg {
     background: #B5442B;
 }
-
+.smaller-icon{
+    width: 300px;
+    height: 300px;
+}
 .mobile_tags {
     background: #B5442B;
-    position: relative;
+    position: absolute;
     bottom: 0;
-    padding-bottom: 50px;
+    padding: 100px 0px;
+    width:102%;
+    margin-top: 50px;
 }
-
+.mobile_header{
+    margin-bottom: 40px;
+}
 .mobiles {
     bottom: 0px;
 }
