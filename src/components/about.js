@@ -12,6 +12,7 @@ import TopBrands from './topBrands';
 import '../assets/css/styles.scss'
 import Mobiles from './mobiles';
 import GreatDeals from './greatDeals';
+import { Link } from 'react-router-dom';
 const About = () => {
   return (
     <div className='home_page' style={{ overflowY: 'scroll', height: '100vh' }}>
@@ -24,8 +25,8 @@ const About = () => {
               <img src={dealmate_icon} alt='dealmate' />
             </div>
             <div className='flex_class play_store'>
-              <a href='/'>Home</a>
-              <a href='/about'>About us</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About us</Link>
               <img src={google_paly} alt="play_store" />
             </div>
           </div>

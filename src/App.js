@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./components/home";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/about";
 import AllDeals from "./components/allDeals";
 import TermsAndConditions from "./components/termsAndConditions";
@@ -8,7 +8,7 @@ import PrivacyPolicy from "./components/privacyPolicy";
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename="/dealmate-app">
       <div>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -18,7 +18,7 @@ const App = () => {
           <Route exact path="/policy" element={<PrivacyPolicy />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
 

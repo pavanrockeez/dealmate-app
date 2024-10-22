@@ -11,7 +11,7 @@ import Offers from './offers';
 import ForKids from './forKids';
 import Footer from './footer';
 import './footer.scss';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Mobiles from './mobiles';
 import GreatDeals from './greatDeals';
 import './deals.scss'
@@ -116,8 +116,8 @@ const Home = () => {
               <img src={dealmate_icon} alt='dealmate' />
             </div>
             <div className='flex_class play_store'>
-              <a href='/'>Home</a>
-              <a href='/about'>About us</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About us</Link>
               <img src={google_paly} alt="play_store" />
             </div>
           </div>

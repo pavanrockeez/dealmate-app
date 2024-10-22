@@ -9,6 +9,7 @@ import dealmate_icon from '../assets/img/dealmate_icon.svg';
 import google_paly from '../assets/img/google_paly.svg';
 import './deals.scss'
 import Footer from './footer';
+import { Link } from 'react-router-dom';
 const AllDeals = () => {
     const products = [
         {
@@ -84,8 +85,8 @@ const AllDeals = () => {
                             <img src={dealmate_icon} alt='dealmate' />
                         </div>
                         <div className='flex_class play_store'>
-                            <a href='/'>Home</a>
-                            <a href='/about'>About us</a>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About us</Link>
                             <img src={google_paly} alt="play_store" />
                         </div>
                     </div>
