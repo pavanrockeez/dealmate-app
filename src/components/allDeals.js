@@ -83,7 +83,9 @@ const AllDeals = () => {
                         <div>
                             <img src={dealmate_icon} alt='dealmate' />
                         </div>
-                        <div>
+                        <div className='flex_class play_store'>
+                            <a href='/'>Home</a>
+                            <a href='/about'>About us</a>
                             <img src={google_paly} alt="play_store" />
                         </div>
                     </div>
@@ -99,11 +101,11 @@ const AllDeals = () => {
                 </div>
             </div>
             <div className='row all_deals'>
-                <div className='col-lg-2'></div>
+                <div className='col-lg-2'></div> {/* Left side margin */}
                 <div className='col-lg-8'>
                     <div className='row alldeals'>
                         {products.map((item, i) => (
-                            <div className="col-lg-4 card_dtl" key={i}>
+                            <div className="col-lg-4 mb-4 card_dtl" key={i}> {/* Each card takes up 4 columns */}
                                 <div className="card">
                                     <div className="images_sec">
                                         <div className='text-left ratings'>
@@ -132,7 +134,7 @@ const AllDeals = () => {
                                         <div className="d-flex justify-content-center card_b_details">
                                             <div className='text-center'>
                                                 <h5>{item.percentate} OFF</h5>
-                                                <p className="body_para text-left">MRP ₹{item.mrp} |  Offer ₹{item.offer} </p>
+                                                <p className="body_para text-left">MRP ₹{item.mrp} | Offer ₹{item.offer}</p>
                                             </div>
                                         </div>
                                         <div className='hr_line'></div>
@@ -143,12 +145,12 @@ const AllDeals = () => {
                                     </div>
                                 </div>
                             </div>
-
                         ))}
                     </div>
                 </div>
-                <div className='col-lg-1'></div>
+                <div className='col-lg-2'></div> {/* Right side margin */}
             </div>
+
             <div className='row justify-content-center load_more'>
                 <button>Load More Deals</button>
             </div>

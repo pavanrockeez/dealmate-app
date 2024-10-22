@@ -102,7 +102,7 @@ const Home = () => {
       brnadlogo: ''
     }
   ];
-  const navigateToAllDeals =()=>{
+  const navigateToAllDeals = () => {
     navigate('/alldeals')
   }
   return (
@@ -116,6 +116,7 @@ const Home = () => {
               <img src={dealmate_icon} alt='dealmate' />
             </div>
             <div className='flex_class play_store'>
+              <a href='/'>Home</a>
               <a href='/about'>About us</a>
               <img src={google_paly} alt="play_store" />
             </div>
@@ -139,20 +140,19 @@ const Home = () => {
               >
                 {tabs.map((link) => {
                   return (
-                    <li key={link.id} className="nav-item ">
-                      <a
+                    <li key={link.id} className="nav-item">
+                      <button
                         className={
                           "nav-link" + (
-                            navTabs == link.to ? " active" : "")
+                            navTabs === link.to ? " active" : "")
                         }
-                        href={"#" + link.to}
                         role="tab"
                         aria-controls="home"
                         data-bs-toggle="tab"
                         onClick={() => tabEvent(link.to)}
                       >
                         {link.name}
-                      </a>
+                      </button>
                     </li>
                   );
                 })}
@@ -163,11 +163,11 @@ const Home = () => {
         </div>
       </div>
       <div className='row dealers'>
-        <div className='col-lg-2'></div>
-        <div className='col-lg-9'>
+        <div className='col-lg-2'></div> {/* Left side margin */}
+        <div className='col-lg-8'>  {/* Main content area for cards */}
           <div className='row alldeals justify-content-center'>
             {products.map((item, i) => (
-              <div className="col-lg-3 card_dtl mr-2" key={i}>
+              <div className="col-lg-4 mb-4" key={i}>  {/* Each card takes up 4 columns */}
                 <div className="card">
                   <div className="images_sec">
                     <div className='text-left ratings'>
@@ -196,9 +196,8 @@ const Home = () => {
                     <div className="d-flex justify-content-center card_b_details">
                       <div className='text-center'>
                         <h5>{item.percentate} OFF</h5>
-                        <p className="body_para text-left">MRP ₹{item.mrp} |  Offer ₹{item.offer} </p>
+                        <p className="body_para text-left">MRP ₹{item.mrp} | Offer ₹{item.offer}</p>
                       </div>
-
                     </div>
                     <div className='hr_line'></div>
                     <div className='d-flex justify-content-between shop_now'>
@@ -209,13 +208,13 @@ const Home = () => {
                 </div>
               </div>
             ))}
-            <div className='col-lg-3'></div>
           </div>
         </div>
-        <div className='col-lg-1'></div>
+        <div className='col-lg-2'></div> {/* Right side margin */}
       </div>
+
       <div className='row justify-content-center load_more'>
-        <button onClick={()=> navigateToAllDeals()}>SEE ALL</button>
+        <button onClick={() => navigateToAllDeals()}>SEE ALL</button>
       </div>
       <TopBrands />
       <Offers />

@@ -23,7 +23,9 @@ const About = () => {
             <div>
               <img src={dealmate_icon} alt='dealmate' />
             </div>
-            <div>
+            <div className='flex_class play_store'>
+              <a href='/'>Home</a>
+              <a href='/about'>About us</a>
               <img src={google_paly} alt="play_store" />
             </div>
           </div>
