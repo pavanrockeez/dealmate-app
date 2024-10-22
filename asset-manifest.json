@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dealmate-app/static/css/main.de81f00d.css",
-    "main.js": "/dealmate-app/static/js/main.8046a279.js",
+    "main.js": "/dealmate-app/static/js/main.43945277.js",
     "static/js/787.030d1e40.chunk.js": "/dealmate-app/static/js/787.030d1e40.chunk.js",
     "static/media/mobile_3.svg": "/dealmate-app/static/media/mobile_3.a7fd023683c063c153ae2b00aea9fe6b.svg",
     "static/media/apple_store.svg": "/dealmate-app/static/media/apple_store.333b84db2fa4a01125f075d0bafae76e.svg",
@@ -20,11 +20,11 @@
     "static/media/share_icon.svg": "/dealmate-app/static/media/share_icon.ea4c0f499410762fe63b1b0ebc0ed7ed.svg",
     "static/media/apple_icon.svg": "/dealmate-app/static/media/apple_icon.160a4117362ed731c4a573dbcca775f1.svg",
     "main.de81f00d.css.map": "/dealmate-app/static/css/main.de81f00d.css.map",
-    "main.8046a279.js.map": "/dealmate-app/static/js/main.8046a279.js.map",
+    "main.43945277.js.map": "/dealmate-app/static/js/main.43945277.js.map",
     "787.030d1e40.chunk.js.map": "/dealmate-app/static/js/787.030d1e40.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de81f00d.css",
-    "static/js/main.8046a279.js"
+    "static/js/main.43945277.js"
   ]
 }
