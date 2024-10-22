@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/dealmate-app/static/css/main.de81f00d.css",
+    "main.js": "/dealmate-app/static/js/main.f6ff74f3.js",
+    "static/js/787.030d1e40.chunk.js": "/dealmate-app/static/js/787.030d1e40.chunk.js",
+    "static/media/mobile_3.svg": "/dealmate-app/static/media/mobile_3.a7fd023683c063c153ae2b00aea9fe6b.svg",
+    "static/media/apple_store.svg": "/dealmate-app/static/media/apple_store.333b84db2fa4a01125f075d0bafae76e.svg",
+    "static/media/play_store.svg": "/dealmate-app/static/media/play_store.eee66791104a8045f63e8d2133e550a4.svg",
+    "static/media/google_paly.svg": "/dealmate-app/static/media/google_paly.d4818ec5b13cdbfb280b6b47920e52e2.svg",
+    "static/media/dealmate_icon.svg": "/dealmate-app/static/media/dealmate_icon.01ac53ca681873602ef5407a17fe40b8.svg",
+    "static/media/truly_icon.svg": "/dealmate-app/static/media/truly_icon.39d8769336bb558eabcf07e6716594e9.svg",
+    "static/media/puma_brand.svg": "/dealmate-app/static/media/puma_brand.5f09caca8e5aa5524433d20afc6a912e.svg",
+    "static/media/store_icon.svg": "/dealmate-app/static/media/store_icon.bd83fed5750acd9a680f4210bc5b2e40.svg",
+    "static/media/instagram_icon.svg": "/dealmate-app/static/media/instagram_icon.8d2269bcd6549bec7ff2afc2b7d4e4aa.svg",
+    "static/media/linked_in_icon.svg": "/dealmate-app/static/media/linked_in_icon.73089379b008aaa2db6551000715c5cf.svg",
+    "static/media/twitter_icon.svg": "/dealmate-app/static/media/twitter_icon.0b7d07d15294976a3e650133eebb8dd5.svg",
+    "static/media/offers_icon.svg": "/dealmate-app/static/media/offers_icon.3d09f0f331d35c669a6a32a87bc2cddc.svg",
+    "static/media/youtube_icon.svg": "/dealmate-app/static/media/youtube_icon.37e71752596acbe7cff1827c9b45d9da.svg",
+    "index.html": "/dealmate-app/index.html",
+    "static/media/share_icon.svg": "/dealmate-app/static/media/share_icon.ea4c0f499410762fe63b1b0ebc0ed7ed.svg",
+    "static/media/apple_icon.svg": "/dealmate-app/static/media/apple_icon.160a4117362ed731c4a573dbcca775f1.svg",
+    "main.de81f00d.css.map": "/dealmate-app/static/css/main.de81f00d.css.map",
+    "main.f6ff74f3.js.map": "/dealmate-app/static/js/main.f6ff74f3.js.map",
+    "787.030d1e40.chunk.js.map": "/dealmate-app/static/js/787.030d1e40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de81f00d.css",
+    "static/js/main.f6ff74f3.js"
+  ]
+}
