@@ -1,25 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import Home from "./components/home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./components/about";
 import AllDeals from "./components/allDeals";
 import TermsAndConditions from "./components/termsAndConditions";
 import PrivacyPolicy from "./components/privacyPolicy";
-const App = () => {
 
+const App = () => {
   return (
-    <div>
-      <BrowserRouter basename="/dealmate-app">
+    <Router>
+      <div>
         <Routes>
-          <Route exact path="/"  element={<Home />}/>
-          <Route exact path="/about" element={<About />}/>
-          <Route exact path="/alldeals" element={<AllDeals />}/>
-          <Route exact path="/terms" element={<TermsAndConditions />}/>
-          <Route exact path="/policy" element={<PrivacyPolicy />}/>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/alldeals" element={<AllDeals />} />
+          <Route exact path="/terms" element={<TermsAndConditions />} />
+          <Route exact path="/policy" element={<PrivacyPolicy />} />
         </Routes>
-      </BrowserRouter>
-     
-    </div>
+      </div>
+    </Router>
   );
 };
+
 export default App;
