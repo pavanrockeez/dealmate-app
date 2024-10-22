@@ -1,5 +1,5 @@
 # My React Application
-This is a React application for Chunk Norries.
+This is a React application for Dealmate.
 
 # Prerequisites
 Before running this application, make sure you have the following software installed on your system:
