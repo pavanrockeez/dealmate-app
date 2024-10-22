@@ -3,14 +3,13 @@ import Home from "./components/home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/about";
 import AllDeals from "./components/allDeals";
-import Header from "./components/header";
 import TermsAndConditions from "./components/termsAndConditions";
 import PrivacyPolicy from "./components/privacyPolicy";
 const App = () => {
 
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/dealmate-app">
         <Routes>
           <Route exact path="/"  element={<Home />}/>
           <Route exact path="/about" element={<About />}/>
